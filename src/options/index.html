@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wrenchie - Settings</title>
+
+    <link rel="stylesheet" href="https://s.lolstatic.com/awesomefonts/1.0.0/lol-fonts.css">
+
+    <style>
+        body {
+            background-color: black;
+            color: #CAB5A2;
+        }
+
+        .lolfont {
+            font-family: "Constantia","Palatino","Georgia",serif;
+        }
+
+        .title {
+            font-size: 35pt;
+            text-align: center;
+            font-weight: lighter;
+        }
+
+        .version {
+            text-align: center;
+            font-size: 14pt;
+            margin-top: -30px;
+        }
+
+        .settings-group {
+            width: 77%;
+            background-color: #021B20;
+            margin: 0 auto;
+            border: 1px solid #195657;
+            padding-bottom: 20px;
+        }
+
+        .settings-group h2 {
+            font-weight: 400;
+            font-size: 14pt;
+            text-align: center;
+        }
+
+        .settings-group textarea {
+            box-sizing: border-box;
+            resize: none;
+            width: calc(100% - 40px);
+
+            border: 1px solid #195657;
+            background-color: transparent;
+            padding: 15px 55px 15px 12px;
+            font-size: 15px;
+            color: #B09C87;
+            min-height: 120px;
+
+            margin: 0 20px;
+            outline: none;
+        }
+
+        .settings-group button {
+            display: block;
+            padding: 5px 10px;
+            background-color: #553621;
+            font-family: "Constantia","Palatino","Georgia",serif;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #CAB5A2;
+            font-size: 18px;
+            border: 1px solid black;
+            outline: 1px solid #553621;
+            text-align: center;
+            margin-right: 20px;
+            float: right;
+            cursor: pointer;
+
+            margin-top: 10px;
+        }
+
+        .footer img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .footer a {
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+            width: 100%;
+            color: #CAB5A2;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title lolfont">Wrenchie</h1>
+<p class="version" id="version"></p>
+
+<div class="settings-group">
+    <h2 class="lolfont">Define a message format. Use %CURSOR% to place the cursor.</h2>
+    <textarea placeholder="Define a format" id="format"></textarea>
+    <button id="saveformat">Save</button>
+    <div class="clearfix"></div>
+</div>
+
+<div class="footer">
+    <img class="footer" src="https://files.wrenchbox.de/assets/img/logo.png">
+    <a href="https://github.com/LarsBaertschi/lol-boards-wrenchie" target="_blank">Support this on GitHub!</a>
+</div>
+
+<script src="../../js/jquery/jquery.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
