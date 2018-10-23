@@ -33,6 +33,7 @@
             margin: 0 auto;
             border: 1px solid #195657;
             padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         .settings-group h2 {
@@ -99,9 +100,18 @@
 <p class="version" id="version"></p>
 
 <div class="settings-group">
-    <h2 class="lolfont">Define a message format. Use %CURSOR% to place the cursor.</h2>
+    <h2 class="lolfont">Define a message format. Use %CURSOR% to auto-focus and place the cursor.</h2>
     <textarea placeholder="Define a format" id="format"></textarea>
     <button id="saveformat">Save</button>
+    <div class="clearfix"></div>
+</div>
+
+<div class="settings-group">
+    <h2 class="lolfont">Current cached support articles:</h2>
+    <button id="updatesupport">Update</button>
+    <ul id="supportlist">
+
+    </ul>
     <div class="clearfix"></div>
 </div>
 
